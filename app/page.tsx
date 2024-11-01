@@ -1,9 +1,10 @@
 import { ReactLenis } from 'lenis/react';
 
 import getInitialComponents from '@/api/getInitialComponents';
-import styles from '@/app/page.module.scss';
 import { Block } from '@/components/Block';
 import { Component } from '@/model/Component';
+
+import styles from './page.module.scss';
 
 export default async function Home() {
   let initialComponents: Component[] = [];
