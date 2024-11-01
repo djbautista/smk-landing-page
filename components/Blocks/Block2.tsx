@@ -9,20 +9,19 @@ import { Block2 as Block2Props } from '@/model/Blocks';
 import styles from './Block2.module.scss';
 
 const Block2: React.FC<Block2Props> = ({ title, text, background }) => {
+  const src = `/assetsApi/${background.url}`;
+
   return (
-    <div
-      className={styles.block2}
-      style={{ backgroundImage: `url(${background.url})` }}
-    >
-      <Card>
+    <div className={styles.block2}>
+      {background.mime.startsWith('video/') ? (
+        <video src={src} autoPlay muted loop preload="auto" />
+      ) : (
+        <Image src={src} alt={title} priority />
+      )}
+      <Card className={styles.card}>
         <h1>{title}</h1>
         <p>{text}</p>
       </Card>
-      {background.mime.startsWith('video/') ? (
-        <video src={background.url} controls />
-      ) : (
-        <Image src={background.url} alt={title} />
-      )}
     </div>
   );
 };

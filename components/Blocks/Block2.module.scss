@@ -1,18 +1,54 @@
 /* Block2.module.scss */
 
 .block2 {
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
 
-  h1 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 1em;
-  }
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 16 / 9;
+
   video,
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 1544px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+    padding: 151px 0;
+
+    h1,
+    p {
+      max-width: 901px;
+
+      font-weight: 400;
+      letter-spacing: -0.05em;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    p {
+      font-size: 25px;
+      line-height: 42px;
+      text-align: justify;
+    }
   }
 }
