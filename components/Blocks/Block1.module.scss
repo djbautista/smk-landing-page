@@ -1,0 +1,54 @@
+@import '@/app/variables.module.scss';
+
+.block1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 0;
+
+  text-align: center;
+  color: $text-color-secondary;
+
+  h1 {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+  }
+
+  h2 {
+    color: $text-color-primary;
+    font-family: $font-sans;
+  }
+
+  ul {
+    list-style-type: none;
+
+    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: $text-color-secondary;
+
+    transform: translateY(-1px);
+
+    li {
+      color: $text-color-primary;
+      font-size: 132px;
+      line-height: 132px;
+      letter-spacing: -0.1em;
+      font-weight: 300;
+
+      &:nth-child(2) {
+        font-family: $font-sans;
+        font-weight: 250;
+        font-size: 150px;
+        line-height: 150px;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+}
