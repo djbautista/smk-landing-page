@@ -1,4 +1,4 @@
-import { Block1 } from '@/components/Blocks';
+import { Block1, Block2 } from '@/components/Blocks';
 import { Component } from '@/model/Component';
 
 export interface BlockProps {
@@ -12,7 +12,7 @@ export default function Block({ component }: BlockProps) {
     case 'text.block1':
       return <Block1 {...component} />;
     case 'text.block2':
-      return <div>text.block2</div>;
+      return <Block2 {...component} />;
     case 'text.block3':
       return <div>text.block3</div>;
     default:

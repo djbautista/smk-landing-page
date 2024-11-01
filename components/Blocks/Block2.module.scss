@@ -1,0 +1,18 @@
+/* Block2.module.scss */
+
+.block2 {
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  video,
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
