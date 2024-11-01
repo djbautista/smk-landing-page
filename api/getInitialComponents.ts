@@ -1,10 +1,12 @@
 import 'server-only';
 
-type JSONValue = string | number;
+import { Component } from '@/model/Component';
 
-export type InitialComponents = Record<string, JSONValue>;
+export type InitialComponents = {
+  components: Component[];
+};
 
-export default async function getInitialComponents(): Promise<InitialComponents> {
+export default async function getInitialBlocks(): Promise<InitialComponents> {
   const searchParams = new URLSearchParams({
     'fields[0]': 'title',
     'fields[1]': 'slug',
