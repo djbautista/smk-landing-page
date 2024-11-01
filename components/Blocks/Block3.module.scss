@@ -1,0 +1,24 @@
+/* Block3.module.scss */
+
+@import '@/app/variables.module.scss';
+
+.block3 {
+  padding: 230px 30px 180px 30px;
+  color: $text-color-secondary;
+  position: sticky;
+  top: 0;
+
+  blockquote {
+    font-style: italic;
+
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -0.05em;
+
+    margin-bottom: 60px;
+  }
+  p {
+    margin: 0.5em 0;
+  }
+}
