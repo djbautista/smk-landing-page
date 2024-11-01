@@ -1,3 +1,5 @@
+import { ReactLenis } from 'lenis/react';
+
 import getInitialComponents from '@/api/getInitialComponents';
 import styles from '@/app/page.module.scss';
 import { Block } from '@/components/Block';
@@ -15,12 +17,14 @@ export default async function Home() {
   }
 
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        {initialComponents.map((component, index) => (
-          <Block key={index} component={component} />
-        ))}
-      </main>
-    </div>
+    <ReactLenis root>
+      <div className={styles.page}>
+        <main className={styles.main}>
+          {initialComponents.map((component, index) => (
+            <Block key={index} component={component} />
+          ))}
+        </main>
+      </div>
+    </ReactLenis>
   );
 }
