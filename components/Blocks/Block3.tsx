@@ -8,7 +8,7 @@ import styles from './Block3.module.scss';
 const Block3: React.FC<Block3Props> = ({ quote, name, title }) => {
   return (
     <div className={styles.block3}>
-      <AnimatedText className={styles.text}>{quote}</AnimatedText>
+      <blockquote>{quote}</blockquote>
       <p>{name}</p>
       <p>{title}</p>
     </div>
