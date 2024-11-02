@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import clsx from 'clsx';
 import { useScroll } from 'framer-motion';
 
-import styles from './Text.module.scss';
+import styles from './AnimatedText.module.scss';
 import { Word } from './Word';
 
 interface AnimatedTextProps extends React.HTMLAttributes<HTMLQuoteElement> {

@@ -3,12 +3,10 @@
 @import '@/app/variables.module.scss';
 
 .block3 {
-  padding: 230px 30px 180px 30px;
   color: $text-color-primary;
-  position: sticky;
   top: 0;
 
-  blockquote {
+  .text {
     font-weight: 300;
     font-size: 80px;
     line-height: 90px;
