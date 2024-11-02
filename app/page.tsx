@@ -10,7 +10,6 @@ export default async function Home() {
   try {
     const { components } = await getInitialComponents();
 
-    components.reverse();
     initialComponents = components;
   } catch (error) {
     console.error(error);

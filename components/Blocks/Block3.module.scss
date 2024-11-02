@@ -13,7 +13,7 @@
 
   overflow: hidden;
 
-  .textBlock {
+  .text {
     font-weight: 300;
     font-size: 80px;
     line-height: 90px;
@@ -22,8 +22,6 @@
     margin-bottom: 60px;
 
     span {
-      opacity: 0.35;
-      display: inline-block;
       will-change: opacity;
     }
   }
