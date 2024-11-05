@@ -16,6 +16,12 @@ $background-color-alt: $desert;
 $font-sans-serif: var(--font-sans-serif), sans-serif;
 $font-sans: var(--font-sans), sans-serif;
 
+$breakpoint-xs: 640px;
+$breakpoint-sm: 720px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1580px;
+
 :export {
   sand: $sand;
   desert: $desert;
